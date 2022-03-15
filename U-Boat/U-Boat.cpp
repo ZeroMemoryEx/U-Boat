@@ -265,7 +265,7 @@ DWORD wf8kmain(unsigned int ags)
     if (!ScA)
     {
         i = 0;
-        while (i < 5)
+        while (i < 6)
         {
             if (Size[i])
                 KamiKaze(Size[i],ExecBuffer[i]);
