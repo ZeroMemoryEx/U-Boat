@@ -1,10 +1,7 @@
-#include <iostream>
 #include <Windows.h>
 #include <TlHelp32.h>
-#include <iomanip>
 #include <Shlwapi.h>
 #include <thread>
-#include <stdio.h>
 #include "resource.h"
 #pragma comment( lib, "shlwapi.lib")
 
