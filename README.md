@@ -26,7 +26,7 @@
         }
     }
     
-    void Trampoline2()
+    void LABEL3()
     {
         __try
         {
@@ -38,7 +38,7 @@
         }
     }
     
-    void Trampoline1()
+    void LABEL2()
     {
         __try 
         {
@@ -46,7 +46,7 @@
         }
         __except (EXCEPTION_EXECUTE_HANDLER)
         {
-            Trampoline2();
+            LABEL3();
         }
     }
     ```
