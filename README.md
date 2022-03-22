@@ -25,7 +25,30 @@
             LABEL2();
         }
     }
-
+    
+    void Trampoline2()
+    {
+        __try
+        {
+            __asm int 3;
+        }
+        __except (EXCEPTION_EXECUTE_HANDLER)
+        {
+            MaliciousEntry();
+        }
+    }
+    
+    void Trampoline1()
+    {
+        __try 
+        {
+            __asm int 3;
+        }
+        __except (EXCEPTION_EXECUTE_HANDLER)
+        {
+            Trampoline2();
+        }
+    }
     ```
 
 
