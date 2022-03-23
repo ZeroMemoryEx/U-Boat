@@ -62,11 +62,11 @@
 
 ## stage 3
 
-* then it will injecting the first 2 wipers in other processes using Shellcode Injection technique the first 2 shellcode will not only overwrite the MBR, but goes further: walking through many structures of the filesystem and corrupting all of them, also overwrite individual files with random data using external driver 
+* then it will injecting the first 2 wipers in other processes using Shellcode Injection technique the first 2 shellcodes will not only overwrite the MBR, but goes further: walking through many structures of the filesystem and corrupting all of them, also overwrite individual files with random data using EaseUS Partition Manager Drivers 
 
 ## stage 4
 
-* the second wave of the 3 shellcodes that will be injected using Thread-Hijack technique first one of them will iterating through all folders and files residing on local fixed drives and verifying that they are not whitelisted. then compares subkeys located within the wht configuration key to the folder name , or file extension the romanian shellcode will do the same job as the first wave
+* the second wave of the 3 shellcodes that will be injected using Thread-Hijack technique first one of them will iterate through all folders and files residing on local fixed drives and verifying that they are not whitelisted. then compares subkeys located within the wht configuration key to the folder name or file extension , the romanian shellcodes will do same job as the first wave
 
    ![image](https://user-images.githubusercontent.com/60795188/159538144-169ca69b-d284-4290-94d8-7064ad5552ce.png)
    
