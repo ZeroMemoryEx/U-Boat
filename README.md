@@ -4,6 +4,8 @@
 
 # Malware Stages
 
+* It has to be run as Administrator in order to work .
+
 ## stage 1
 * in the first the program will Retrieves your geographical location using GetUserGeoID and compare it with ``UKR`` if the comparation evaluate to TRUE  then it will Set the process as critical and jump to stage 2
 
