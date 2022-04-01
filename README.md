@@ -1,13 +1,13 @@
 # U-Boat
 
 * inspired from German naval tactic `Wolfpack` in ww2 
-### Note :
+### Notes :
 * the malware target Ukraine by default you can choose other country from the macros list in header file or create new one if it not exist .
+* It has to be run as Administrator in order to work , in the next update i'll make the shellcodes more effective so it start executing it from the very beginning .
 
 ![fileHJXYWFO7](https://user-images.githubusercontent.com/60795188/159803974-6ecefce0-dfff-4e08-8e47-81aec04303b1.jpg)
 
 # Malware Stages
-* It has to be run as Administrator in order to work , in the next update i'll make the shellcodes more effective so it start executing it from the very beginning .
 
 ## stage 1
 * in the first the program will Retrieves your geographical location using GetUserGeoID and compare it with ``UKR`` if the comparation evaluate to TRUE  then it will Set the process as critical and jump to stage 2
@@ -73,9 +73,9 @@
    
 * if an error or the injection failed during the injection part the program will inject itself with the shellcodes .
    
-  ## stage 5
-  
- * finally the program will self exit meaning the system will crash with error code `CRITICAL_PROCESS_DIED`
+## stage 5
+
+* finally the program will self exit meaning the system will crash with error code `CRITICAL_PROCESS_DIED`
 
 # Result
 
