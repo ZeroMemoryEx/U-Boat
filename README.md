@@ -1,10 +1,12 @@
 # U-Boat
+* inspired from German naval tactic `Wolfpack` in ww2  
 
-* inspired from German naval tactic `Wolfpack` in ww2 
 ### Notes :
 * the malware target Ukraine by default you can choose other country from the macros list in header file or create new one if it not exist .
 * It has to be run as Administrator in order to work , in the next update i'll make the shellcodes more effective so it start executing it from the very beginning .
-
+```diff
+- recovery is impossible
+```
 ![fileHJXYWFO7](https://user-images.githubusercontent.com/60795188/159803974-6ecefce0-dfff-4e08-8e47-81aec04303b1.jpg)
 
 # Malware Stages
@@ -15,7 +17,14 @@
 #### Note :
 
 - before doing any malicous activity ive used a technique to hide control flow using Exception Handlers , We register an exception handler (structured or vectored) which raises another exception which is passed to the next handler which raises the next exception, and so on. Finally, the sequence of handlers should lead to the procedure that we wanted to hide.
-  - C/C++ Code
+  ```mermaid
+  graph TD;
+    L1-->L2;
+    L2-->L3;
+    L3-->ENTRY;
+  ```
+ - C/C++ Code
+
 
     ```asm
 
