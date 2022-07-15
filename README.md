@@ -3,7 +3,7 @@
 
 ### Notes :
 * the malware target Ukraine by default you can choose other countries from the macro list in header file or create new one if it does not exist .
-* It has to be run as Administrator in order to work , the shellcodes has been modified for this task so they get executed from the very beginning.
+* It has to be run as Administrator in order to work in the next update il make it escalate privilege by abusing someone undocumented APIs , the shellcodes has been modified for this task so they get executed from the very beginning.
 ```diff
 - after running this malware the recovery will be impossible
 ```
