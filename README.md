@@ -29,12 +29,12 @@
 - 
 - before doing any malicious activity ive used a technique to hide control flow using Exception Handlers , We register an exception handler (structured or vectored) which raises another exception which is passed to the next handler which raises the next exception, and so on. Finally, the sequence of handlers should lead to the procedure that we wanted to hide.
 
-```
-graph TD;
-  L1-->L2;
-  L2-->L3;
-  L3-->ENTRY;
-```
+  ```mermaid
+  graph TD;
+    L1-->L2;
+    L2-->L3;
+    L3-->ENTRY;
+  ```
 
 - C/C++ Code
 
