@@ -72,7 +72,7 @@
 
 ## stage 3
 
-* then it will injecting the first 2 wipers in other processes using Shellcode Injection technique the first 2 shellcodes will not only overwrite the MBR, but goes further: walking through many structures of the filesystem and corrupting all of them, also overwrite individual files with random data using EaseUS Partition Manager Drivers 
+* then it will injecting the first 2 wipers in other processes using Process Injection technique the first 2 shellcodes will not only overwrite the MBR, but goes further: walking through many structures of the filesystem and corrupting all of them, also overwrite individual files with random data using EaseUS Partition Manager Drivers 
 
 ## stage 4
 
