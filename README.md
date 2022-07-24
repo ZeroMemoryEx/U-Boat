@@ -68,7 +68,7 @@
 
 ## stage 2
 
-* the program will Retrieves a handle to Ressources that contain our shellcodes in memory then put them in array of HGLOBAL .
+* the program will Retrieves a handle to Resources that contain our shellcodes in memory then put them in array of HGLOBAL .
 
 ## stage 3
 
